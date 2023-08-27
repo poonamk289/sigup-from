@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" style="border-bottom: 1px solid rgb(199, 195, 195);">
+        <div>
+            <h3>Header</h3>
+        </div>
+        <div class="right">
+            <h3 id="directSignUp">SignUp</h3>
+            <h3 id="directProfile">Profile</h3>
+        </div>
+    </div>
+    <div class="main">
+        <div class="form-div">
+            <h1>Profile</h1>
+            <div class="details" style="display: flex;flex-direction: column;gap: 2rem;">
+                <div>Full Name : <span id="name"></span></div>
+                <div>Email : <span id="email"></span></div>
+                <div>Password : <span id="password"></span></div>
+
+                <div><button id="logout" style="margin-top: 2rem;">Logout</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+    </body>
+</html>

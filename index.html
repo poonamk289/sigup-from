@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sign UP</h1>
-
-    <form>
+    <div class="header" style="border-bottom: 1px solid rgb(199, 195, 195);">
+        <div>
+            <h3>Header</h3>
+        </div>
+        <div class="right">
+            <h3 id="directSignUp">SignUp</h3>
+            <h3 id="directProfile">Profile</h3>
+        </div>
+    </div>
+    <div class="main">
+        
         <div class="form-div">
-            <div>
-                <div><input type="text" placeholder="Full Name" required></div>
-                <div><input type="text" placeholder="Email" required></div>
-                <div><input type="text" placeholder="Password" required></div>
-                <div><input type="text" placeholder="Confirm Password" required></div>
-                <div class="errmsg"></div>
-            </div>
-        <button>Sign Up</button>
-    </form>
+            <h1>Sign Up</h1>
+            <form>
+                    <div class="form-inside">
+                        <div><input id="name" type="text" placeholder="Full Name" required></div>
+                        <div><input id="email" type="text" placeholder="Email" required></div>
+                        <div><input id="password" type="text" placeholder="Password" required></div>
+                        <div><input  type="text" placeholder="Confirm Password" required></div>
+                        
+                    </div>
+                    <div id="err-msg">
+                        error
+                    </div>
+                <button id="sign-up">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
